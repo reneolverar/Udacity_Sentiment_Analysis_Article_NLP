@@ -12,12 +12,12 @@ Follow one of the two following methods to get this project:
 Clone this repo using GIT:
 
 ```
-> git clone https://github.com/sivakraj/evaluate-news.git
+> git clone https://github.com/reneolverar/Udacity_Sentiment_Analysis_Article_NLP.git
 
 ```
 
 ### Download the .zip file
-Click [here](https://github.com/reneolverar/Udacity_Sentiment_Analysis_Article_NLP) to download the .zip file.
+Click [here](https://github.com/reneolverar/Udacity_Sentiment_Analysis_Article_NLP/archive/refs/heads/main.zip) to download the .zip file.
 
 ## Instructions to run the project
 
