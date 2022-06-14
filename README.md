@@ -17,7 +17,7 @@ Clone this repo using GIT:
 ```
 
 ### Download the .zip file
-Click [here](https://github.com/sivakraj/) to download the .zip file.
+Click [here](https://github.com/reneolverar/Udacity_Sentiment_Analysis_Article_NLP) to download the .zip file.
 
 ## Instructions to run the project
 
