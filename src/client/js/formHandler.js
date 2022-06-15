@@ -25,7 +25,7 @@ export function handleSubmit(event) {
     }
     else {
         // Fetch API KEY from server
-        console.log("Fetching key...")
+        console.log("Fetching API key from server");
         fetch('http://localhost:8081/apiKey')
         .then(res => res.text())
         .then(function(res){
