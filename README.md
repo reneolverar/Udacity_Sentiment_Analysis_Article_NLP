@@ -4,6 +4,8 @@ This project evaluates text using the MeaningCloud API, which evaluates aspects 
 
 You can choose to input raw text or an URL to a news article / blog.
 
+A live demonstration of the project can be testet at: https://strong-khapse-48d3b8.netlify.app/
+
 ## Getting Started
 
 Follow one of the two following methods to get this project:
