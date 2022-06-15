@@ -25,15 +25,14 @@ export function handleSubmit(event) {
     }
     else {
         // Fetch API KEY from server
-        // console.log("Fetching key...")
-        // fetch('http://localhost:8081/apiKey')
-        // .then(res => res.text())
-        // .then(function(res){
-        //     apiKey = res
-        // })
+        console.log("Fetching key...")
+        fetch('http://localhost:8081/apiKey')
+        .then(res => res.text())
+        .then(function(res){
+            apiKey = res
+        })
 
         // Calling API with the webpack environment
-        apiKey = "10aade8312490ce73c404886b8afc330"
         console.log("Fetching API data for a: " + textType);
 
         document.getElementById('results').innerHTML = "Processing results..."
