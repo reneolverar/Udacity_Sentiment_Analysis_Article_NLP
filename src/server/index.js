@@ -4,7 +4,10 @@ var path = require('path')
 const express = require('express')
 const app = express()
 app.use(express.static('dist'))
-// console.log(__dirname)
+
+// Use Cors for cross origin allowance (enable ALL CORS requests)
+const cors = require('cors');
+app.use(cors());
 
 app.get('/', function (req, res) {
     res.sendFile('/dist/index.html')

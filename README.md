@@ -39,6 +39,7 @@ Once Node is installed, navigate to the folder where this project is located in 
 #### Dependecies:
 
 "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "node-fetch": "^3.2.6",
@@ -50,7 +51,6 @@ Once Node is installed, navigate to the folder where this project is located in 
     "@babel/preset-env": "^7.18.2",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
-    "cross-fetch": "^3.1.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.1",
@@ -64,6 +64,7 @@ Once Node is installed, navigate to the folder where this project is located in 
     "terser-webpack-plugin": "^5.3.3",
     "webpack-dev-server": "^4.9.2",
     "workbox-webpack-plugin": "^6.5.3"
+  }
 
 ### Meaning cloud API Keys
 
@@ -78,19 +79,13 @@ Create a file in the main directory called ".env" with the following code
 
 ### Using the project
 
-##### To build files in dev mode
-```
-> npm run build-dev
-
-```
-
-##### To build files in production mode
+#### To build files in production mode
 ```
 > npm run build-prod
 
 ```
 
-##### To run all the unit tests
+#### To run all the unit tests
 ```
 > npm test
 
@@ -99,5 +94,16 @@ Create a file in the main directory called ".env" with the following code
 #### To spin up Express server(listens to port: 8081)
 ```
 > npm start
+
+```
+
+#### To build files in dev mode
+
+The webpack-dev-server fetches the API key from a local server in port 8081 which has to be started for the dev environment to work.
+
+```
+> npm run build-prod
+> npm start
+> npm run build-dev
 
 ```
