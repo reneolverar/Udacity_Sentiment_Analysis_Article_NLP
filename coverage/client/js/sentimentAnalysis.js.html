@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/16</span>
+                <span class='fraction'>0/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/16</span>
+                <span class='fraction'>0/20</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -97,72 +97,84 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// API call
-export async function sentimentAnalysisCheck (text, textType, apiKey) {
+export async function <span class="fstat-no" title="function not covered" >sentimentAnalysisCheck </span>(text, textType, apiKey) {
 &nbsp;
     // API call input
-    const formdata = new FormData();
-    formdata.append("key", apiKey);
+    const formdata = <span class="cstat-no" title="statement not covered" >new FormData();</span>
+<span class="cstat-no" title="statement not covered" >    formdata.append("key", apiKey);</span>
 &nbsp;
     // TEXT/URL Selector
-    if (textType == "Text"){
-        formdata.append("txt", text);
+<span class="cstat-no" title="statement not covered" >    if (textType == "Text"){</span>
+<span class="cstat-no" title="statement not covered" >        formdata.append("txt", text);</span>
     }
-    else <span class="missing-if-branch" title="else path not taken" >E</span>{<span class="cstat-no" title="statement not covered" >formdata.append("url", text);}</span>
+    else {<span class="cstat-no" title="statement not covered" >formdata.append("url", text);}</span>
 &nbsp;
-    formdata.append("lang", "en");  // 2-letter code, like en es fr ...
+<span class="cstat-no" title="statement not covered" >    formdata.append("lang", "en"); </span> // 2-letter code, like en es fr ...
 &nbsp;
-    const requestOptions = {
+    const requestOptions = <span class="cstat-no" title="statement not covered" >{</span>
         method: 'POST',
         body: formdata,
         redirect: 'follow'
     }
 &nbsp;
-    const res = await fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions);
-    try {
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (res.status != '200') {
-<span class="cstat-no" title="statement not covered" >            throw Error(res.status);</span>
+    const res = <span class="cstat-no" title="statement not covered" >await fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions);</span>
+<span class="cstat-no" title="statement not covered" >    try {</span>
+        const body = <span class="cstat-no" title="statement not covered" >await res.json();</span>
+<span class="cstat-no" title="statement not covered" >        if (body.status.msg != 'OK') {</span>
+<span class="cstat-no" title="statement not covered" >            throw Error(body.status.msg);</span>
         }
-        const body = await res.json();
-        console.log(body)
-        return body
+<span class="cstat-no" title="statement not covered" >        console.log(body)</span>
+<span class="cstat-no" title="statement not covered" >        document.getElementById('error').style.display = "none"</span>
+<span class="cstat-no" title="statement not covered" >        return body</span>
     } catch (error) {
         // appropriately handle the error
 <span class="cstat-no" title="statement not covered" >        console.log('error', error);</span>
+<span class="cstat-no" title="statement not covered" >        document.getElementById('results').style.display = "none"</span>
+<span class="cstat-no" title="statement not covered" >        document.getElementById('error').style.display = "block"</span>
+<span class="cstat-no" title="statement not covered" >        document.getElementById('error').innerHTML = error</span>
 <span class="cstat-no" title="statement not covered" >        return error;</span>
     }
 }</pre></td></tr></table></pre>
@@ -172,7 +184,7 @@ export async function sentimentAnalysisCheck (text, textType, apiKey) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Jun 14 2022 18:47:01 GMT-0300 (Brasilia Standard Time)
+                at Fri Jun 17 2022 21:29:11 GMT-0300 (Brasilia Standard Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>

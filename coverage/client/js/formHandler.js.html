@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.53% </span>
+                <span class="strong">10% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/26</span>
+                <span class='fraction'>3/30</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>1/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.53% </span>
+                <span class="strong">10% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/26</span>
+                <span class='fraction'>3/30</span>
             </div>
         
             
@@ -162,6 +162,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -171,25 +189,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -226,42 +226,42 @@
     }
     // Check if URL is entered but a text is chosen
     else <span class="cstat-no" title="statement not covered" >if (textType == "Text" &amp;&amp; isValidURL(formText)) {</span>
-<span class="cstat-no" title="statement not covered" >        document.getElementById('results').innerHTML = "You entered an URL, please select the URL option";</span>
+<span class="cstat-no" title="statement not covered" >        document.getElementById('results').innerHTML = "You entered an URL, please select the URL option"</span>
     }
     // Check if URL is valid
     else <span class="cstat-no" title="statement not covered" >if (textType == "URL" &amp;&amp; !isValidURL(formText)) {</span>
-<span class="cstat-no" title="statement not covered" >        document.getElementById('results').innerHTML = "Please enter a valid URL to search";</span>
+<span class="cstat-no" title="statement not covered" >        document.getElementById('results').innerHTML = "Please enter a valid URL to search"</span>
     }
     else {
         // Fetch API KEY from server
-        // console.log("Fetching key...")
-        // fetch('http://localhost:8081/apiKey')
-        // .then(res =&gt; res.text())
-        // .then(function(res){
-        //     apiKey = res
-        // })
+<span class="cstat-no" title="statement not covered" >        console.log("Fetching API key from server")</span>
 &nbsp;
-        // Calling API with the webpack environment
-<span class="cstat-no" title="statement not covered" >        apiKey = "10aade8312490ce73c404886b8afc330"</span>
-<span class="cstat-no" title="statement not covered" >        console.log("Fetching API data for a: " + textType);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        document.getElementById('results').innerHTML = "Processing results..."</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        Client.sentimentAnalysisCheck(formText, textType, apiKey)</span>
-        .then(<span class="fstat-no" title="function not covered" >fu</span>nction(sentimentAnalysis){
-<span class="cstat-no" title="statement not covered" >            message = `API Call Sentiment analysis results: &lt;br&gt;</span>
-                    &lt;br&gt;
-                    Text excerpt: ${sentimentAnalysis.sentence_list[0].text} &lt;br&gt;
-                    &lt;br&gt;
-                    Total results:&lt;br&gt;
-                    Polarity: ${sentimentAnalysis.score_tag} &lt;br&gt;
-                    Agreement: ${sentimentAnalysis.agreement} &lt;br&gt;
-                    Subjectivity: ${sentimentAnalysis.subjectivity} &lt;br&gt;
-                    Irony: ${sentimentAnalysis.irony} &lt;br&gt;
-                    Confidence: ${sentimentAnalysis.confidence}`
+<span class="cstat-no" title="statement not covered" >        fetch('http://localhost:8081/apiKey')</span>
+        .then(<span class="fstat-no" title="function not covered" >re</span>s =&gt; <span class="cstat-no" title="statement not covered" >res.text())</span>
+        .then(<span class="fstat-no" title="function not covered" >fu</span>nction(res){
+<span class="cstat-no" title="statement not covered" >            apiKey = res</span>
         })
-        .then(<span class="fstat-no" title="function not covered" >fu</span>nction(sentimentAnalysis){
-<span class="cstat-no" title="statement not covered" >            document.getElementById('results').innerHTML = message</span>
+        .then(<span class="fstat-no" title="function not covered" >fu</span>nction(res){
+            // Calling API with the webpack environment
+<span class="cstat-no" title="statement not covered" >            console.log("Fetching API data for a: " + textType);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            document.getElementById('results').style.display = "block"</span>
+<span class="cstat-no" title="statement not covered" >            document.getElementById('results').innerHTML = "Processing results..."</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            Client.sentimentAnalysisCheck(formText, textType, apiKey)</span>
+            .then(<span class="fstat-no" title="function not covered" >fu</span>nction(sentimentAnalysis){
+<span class="cstat-no" title="statement not covered" >                message = `API Call Sentiment analysis results: &lt;br&gt;</span>
+                        &lt;br&gt;
+                        Text excerpt: ${sentimentAnalysis.sentence_list[0].text} &lt;br&gt;
+                        &lt;br&gt;
+                        Total results:&lt;br&gt;
+                        Polarity: ${sentimentAnalysis.score_tag} &lt;br&gt;
+                        Agreement: ${sentimentAnalysis.agreement} &lt;br&gt;
+                        Subjectivity: ${sentimentAnalysis.subjectivity} &lt;br&gt;
+                        Irony: ${sentimentAnalysis.irony} &lt;br&gt;
+                        Confidence: ${sentimentAnalysis.confidence}`
+<span class="cstat-no" title="statement not covered" >                document.getElementById('results').innerHTML = message</span>
+            })
         })
     }
 }
@@ -286,7 +286,7 @@ function <span class="fstat-no" title="function not covered" >checkTextType(</sp
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Jun 14 2022 18:47:01 GMT-0300 (Brasilia Standard Time)
+                at Fri Jun 17 2022 21:29:11 GMT-0300 (Brasilia Standard Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>

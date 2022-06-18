@@ -2,5 +2,6 @@ node_modules
 MeaningCloud_APIKEY.txt
 dist
 package.json.tests.txt
+testSentimentAnalysis.spec.test.txt
 # Environment variables
 .env
